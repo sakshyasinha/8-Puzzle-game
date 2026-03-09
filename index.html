@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8 Puzzle Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <header class="header">
+          <p class="eyebrow">Web Game</p>
+          <h1>8 Puzzle</h1>
+          <p class="subtitle">Slide tiles into order from 1 to 8.</p>
+        </header>
+
+        <section class="stats" aria-label="Game statistics">
+          <div class="stat">
+            <span class="label">Moves</span>
+            <strong id="moveCount">0</strong>
+          </div>
+          <div class="stat">
+            <span class="label">Time</span>
+            <strong id="timer">00:00</strong>
+          </div>
+          <div class="stat">
+            <span class="label">Best</span>
+            <strong id="bestMoves">-</strong>
+          </div>
+        </section>
+
+        <section class="board-wrap" aria-live="polite">
+          <div id="board" class="board" role="grid" aria-label="8 Puzzle Board"></div>
+        </section>
+
+        <section class="controls">
+          <button id="shuffleBtn" class="btn btn-primary" type="button">Shuffle</button>
+          <button id="resetBtn" class="btn" type="button">Reset</button>
+          <button id="hintBtn" class="btn" type="button">Hint</button>
+        </section>
+
+        <p id="message" class="message" aria-live="assertive">
+          Press Shuffle to begin.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
