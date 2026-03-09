@@ -34,4 +34,4 @@ Typical options:
 Contributions are welcome. Feel free to open an issue or submit a pull request.
 
 ## License
-Add your license here (e.g., MIT).
+MIT
